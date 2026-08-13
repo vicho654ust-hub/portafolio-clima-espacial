@@ -1,12 +1,12 @@
 # Clima Espacial y Precisión GNSS/GPS
 
-Proyecto de investigación aplicada: análisis del impacto del clima espacial (viento solar, tormentas geomagnéticas, anomalías ionosféricas) sobre fenómenos que afectan la precisión de señales GPS/GNSS. Desarrollado como proyecto de portafolio en Data Science / Machine Learning, con datos reales de la NASA, GFZ Potsdam y NOAA.
+Proyecto de investigación aplicada: análisis del impacto del clima espacial (viento solar, tormentas geomagnéticas, anomalías ionosféricas) sobre fenómenos que afectan la precisión de señales GPS/GNSS (fenómenos causantes). Desarrollado como proyecto de portafolio en Data Science / Machine Learning, con datos reales de la NASA, GFZ Potsdam y NOAA.
 
 ## Objetivo
 
-Analizar, con datos reales y un enfoque riguroso, cómo la actividad del viento solar se relaciona con las tormentas geomagnéticas y las anomalías en la ionosfera — evaluando además si existe relación con anomalías gravitacionales terrestres — y construir un modelo capaz de predecir la intensidad de una tormenta geomagnética a partir de variables del viento solar.
+Analizar, con datos reales  cómo la actividad del viento solar se relaciona con las tormentas geomagnéticas y las anomalías en la ionosfera — evaluando además si existe relación con anomalías gravitacionales terrestres — y construir un modelo capaz de predecir la intensidad de una tormenta geomagnética a partir de variables del viento solar es decir, predice qué tan intensa será una tormenta geomagnética resultante (el Ap). Lee condiciones que esté teniendo el viento solar y a partir de ello define la intensidad con que se manifestará la tormenta.
 
-Este proyecto no busca un descubrimiento científico nuevo: su valor está en el manejo riguroso de datos reales, la interpretación honesta de los resultados (incluyendo un hallazgo negativo) y la construcción de una herramienta predictiva funcional, de principio a fin.
+Este proyecto no busca un descubrimiento científico nuevo: su valor está en el manejo de datos reales, la interpretación de resultados (incluyendo hallazgos negativos o fuera de lo esperado) y la construcción de una herramienta predictiva funcional.
 
 ## Resultados principales
 
@@ -26,7 +26,7 @@ Variable más importante para el modelo: **Bz** (orientación del campo magnéti
 ```
 ├── notebooks/              # Análisis exploratorio y entrenamiento del modelo
 ├── dashboard.py             # Dashboard interactivo (Streamlit)
-├── modelo_prediccion_ap.pkl # Modelo Random Forest entrenado, listo para usar
+├── modelo_prediccion_ap.pkl # Modelo Random Forest entrenado
 ├── dataset_diario_2015_2024.csv  # Dataset diario procesado (2015-2024)
 └── README.md
 ```
@@ -58,10 +58,8 @@ streamlit run dashboard.py
 
 Python · pandas · scikit-learn · matplotlib · Streamlit · Git/GitHub
 
-## Estado del proyecto
 
-Análisis técnico y dashboard completos. Documento de investigación (LaTeX) en desarrollo.
 
 ## Autor
 
-Proyecto desarrollado por [tu nombre] como parte de un portafolio profesional en Data Science / Machine Learning.
+Proyecto desarrollado por Vicente Alejandro Núñez González como parte de un portafolio en Data Science / Machine Learning.
